@@ -4,7 +4,7 @@ import copy
 
 
 def main():
-    LATEX = open("weights_table/LATEX_WEIGHTS.txt", "w")
+    LATEX = open("LATEX_WEIGHTS.txt", "w")
 
     vulns = {"BYPASS AUTHORIZATION": "Bypassing Authorization",
              "INSUFFICIENT SESSION EXPIRATION": "Insufficient Session Expiration",

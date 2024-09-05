@@ -4,7 +4,7 @@ import copy
 
 
 def main():
-    LATEX = open("top_vuln_scenario/LATEX_VULNS.txt", "w")
+    LATEX = open("LATEX_VULNS.txt", "w")
 
     vulns = {"BYPASS AUTHORIZATION": "Bypassing Authorization",
              "SESSION EXPIRATION": "Insufficient Session Expiration",
@@ -50,7 +50,7 @@ def main():
 
     scenarios_indx = ["Business Critical", "Heightened Critical", "Best Effort", "Minimum Effort"]
 
-    xl = pd.read_excel('top_vuln_scenario/Comb2_Vuln.xlsx', sheet_name=None)
+    xl = pd.read_excel('Comb2_Vuln.xlsx', sheet_name=None)
 
     for cat in categories.keys():
         LATEX.write("\\textbf{\\Large Results obtained in " + categories[cat][1] + "}\\newline\n\n")
