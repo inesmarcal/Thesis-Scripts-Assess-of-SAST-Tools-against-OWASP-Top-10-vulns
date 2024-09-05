@@ -1,0 +1,200 @@
+\begin{tiny}
+\captionsetup{font=footnotesize}
+\centering
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{*{1}{|m{1.5in}|} *{3}{wc{0.35cm}|} *{16}{wc{0.35cm}|} }
+\hline
+\rowcolor{lightgray}\multicolumn{4}{|c|}{Vulnerability} & \multicolumn{16}{c|}{Tools} \\
+\hline
+\rowcolor{lightgray} {Name} &  \multicolumn{3}{|c|}{Total} & \multicolumn{4}{c|}{Snyk} & \multicolumn{4}{c|}{Fortify} & \multicolumn{4}{c|}{Semgrep} & \multicolumn{4}{c|}{Spotbugs}\\
+\hline
+\rowcolor{lightlightgray} A1 Broken Access Control & P & N & NN & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+Bypassing Authorization & 233 & 372 & 1535 & 152 & 81 & 0 & 1907 & 32 & 201 & 480 & 1427 & 9 & 224 & 9 & 1898 & 196 & 37 & 1099 & 808\\
+\hline
+Insufficient Session Expiration & 17 & 30 & 0 & 0 & 17 & 0 & 30 & 0 & 17 & 0 & 30 & 0 & 17 & 0 & 30 & 0 & 17 & 0 & 30\\
+\hline
+Path Traversal & 230 & 378 & 0 & 160 & 70 & 0 & 378 & 230 & 0 & 4 & 374 & 53 & 177 & 24 & 354 & 213 & 17 & 188 & 190\\
+\hline
+Cross-Site Request Forgery & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A2 Cryptographic Failure & P & N & NN & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+Use of Old/Insecure algorithms & 34 & 60 & 494 & 34 & 0 & 298 & 256 & 18 & 16 & 0 & 554 & 34 & 0 & 0 & 554 & 34 & 0 & 298 & 256\\
+\hline
+Deprecated Hash Functions & 51 & 90 & 0 & 51 & 0 & 0 & 90 & 51 & 0 & 0 & 90 & 34 & 17 & 0 & 90 & 51 & 0 & 0 & 90\\
+\hline
+Use of Weak PRNG & 34 & 60 & 17 & 0 & 34 & 0 & 77 & 34 & 0 & 0 & 77 & 0 & 34 & 0 & 77 & 34 & 0 & 0 & 77\\
+\hline
+Seeds Hard Coded in PRNG & 17 & 30 & 0 & 0 & 17 & 0 & 30 & 0 & 17 & 0 & 30 & 0 & 17 & 0 & 30 & 0 & 17 & 0 & 30\\
+\hline
+
+\rowcolor{lightlightgray} A3 Injection & P & N & NN & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+OS Command Injection & 252 & 411 & 0 & 164 & 88 & 0 & 411 & 252 & 0 & 411 & 0 & 60 & 192 & 9 & 402 & 252 & 0 & 411 & 0\\
+\hline
+SQL Injection & 260 & 863 & 223 & 144 & 116 & 22 & 1064 & 260 & 0 & 126 & 960 & 226 & 34 & 358 & 728 & 260 & 0 & 861 & 225\\
+\hline
+LDAP Injection & 265 & 433 & 0 & 176 & 89 & 0 & 433 & 265 & 0 & 61 & 372 & 265 & 0 & 423 & 10 & 265 & 0 & 433 & 0\\
+\hline
+Cross-Site Scripting & 196 & 323 & 44 & 115 & 81 & 0 & 367 & 96 & 100 & 0 & 367 & 41 & 155 & 0 & 367 & 16 & 180 & 0 & 367\\
+\hline
+XPath Injection & 263 & 850 & 0 & 0 & 263 & 0 & 850 & 263 & 0 & 18 & 832 & 54 & 209 & 288 & 562 & 263 & 0 & 850 & 0\\
+\hline
+HTTP Response Splitting & 389 & 1266 & 115 & 249 & 140 & 0 & 1381 & 137 & 252 & 307 & 1074 & 0 & 389 & 0 & 1381 & 368 & 21 & 861 & 520\\
+\hline
+
+\rowcolor{lightlightgray} A4 Insecure Design & P & N & NN & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+Improper Error Handling & 90 & 155 & 2063 & 0 & 90 & 0 & 2218 & 51 & 39 & 2123 & 95 & 0 & 90 & 0 & 2218 & 0 & 90 & 0 & 2218\\
+\hline
+Trust Boundary Violation & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+Method Tampering & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A5 Security Misconfiguration & P & N & NN & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+XML External Entities & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+Bad Programming of Cookies & 17 & 30 & 638 & 17 & 0 & 0 & 668 & 17 & 0 & 30 & 638 & 17 & 0 & 0 & 668 & 16 & 1 & 0 & 668\\
+\hline
+Insecure Use of Hard Coded Constants & 37 & 52 & 2 & 22 & 15 & 0 & 54 & 0 & 37 & 0 & 54 & 2 & 35 & 2 & 52 & 17 & 20 & 0 & 54\\
+\hline
+
+\rowcolor{lightlightgray} A6 Vulnerable and Outdated Components & P & N & NN & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+Vulnerable Third-Party Components & 68 & 120 & 364 & 0 & 68 & 0 & 484 & 34 & 34 & 364 & 120 & 0 & 68 & 0 & 484 & 0 & 68 & 0 & 484\\
+\hline
+
+\rowcolor{lightlightgray} A7 Identification and Authentication Failures & P & N & NN & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+Bypassing Authentication & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+Hard Coded Passwords & 111 & 156 & 75 & 78 & 33 & 106 & 125 & 21 & 90 & 51 & 180 & 36 & 75 & 51 & 180 & 56 & 55 & 0 & 231\\
+\hline
+
+\rowcolor{lightlightgray} A8 Software and data integrity failures & P & N & NN & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+Insecure Deserialization & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A9 Security Logging and Monitoring Failures & P & N & NN & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+Improper Output Neutralization for Logs & 51 & 90 & 53 & 17 & 34 & 0 & 143 & 0 & 51 & 0 & 143 & 34 & 17 & 0 & 143 & 0 & 51 & 0 & 143\\
+\hline
+
+\rowcolor{lightlightgray} A10 Server-side Request Forgery & P & N & NN & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+Server-side Request Forgery & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\caption{SAST tools output in relation to the Juliet Test Suit - Part1}
+\label{table:SAST tools output in relation to the Juliet Test Suit - Part1}
+\end{longtable}
+\end{tiny}
+
+
+
+\begin{tiny}
+\captionsetup{font=footnotesize}
+\centering
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{*{1}{|m{1.5in}|} *{3}{wc{0.35cm}|} *{12}{wc{0.35cm}|} }
+\hline
+\rowcolor{lightgray}\multicolumn{4}{|c|}{Vulnerability} & \multicolumn{12}{c|}{Tools} \\
+\hline
+\rowcolor{lightgray} {Name} &  \multicolumn{3}{|c|}{Total} & \multicolumn{4}{c|}{Synopsys} & \multicolumn{4}{c|}{Kiuwan} & \multicolumn{4}{c|}{Horusec}\\
+\hline
+\rowcolor{lightlightgray} A1 Broken Access Control & P & N & NN & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+Bypassing Authorization & 233 & 372 & 1535 & 87 & 146 & 0 & 1907 & 106 & 127 & 105 & 1802 & 0 & 233 & 0 & 1907\\
+\hline
+Insufficient Session Expiration & 17 & 30 & 0 & 17 & 0 & 0 & 30 & 0 & 17 & 0 & 30 & 0 & 17 & 0 & 30\\
+\hline
+Path Traversal & 230 & 378 & 0 & 0 & 230 & 0 & 378 & 149 & 81 & 0 & 378 & 0 & 230 & 0 & 378\\
+\hline
+Cross-Site Request Forgery & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A2 Cryptographic Failure & P & N & NN & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+Use of Old/Insecure algorithms & 34 & 60 & 494 & 34 & 0 & 388 & 166 & 17 & 17 & 0 & 554 & 34 & 0 & 164 & 390\\
+\hline
+Deprecated Hash Functions & 51 & 90 & 0 & 51 & 0 & 0 & 90 & 51 & 0 & 0 & 90 & 51 & 0 & 0 & 90\\
+\hline
+Use of Weak PRNG & 34 & 60 & 17 & 0 & 34 & 0 & 77 & 0 & 34 & 17 & 60 & 17 & 17 & 0 & 77\\
+\hline
+Seeds Hard Coded in PRNG & 17 & 30 & 0 & 17 & 0 & 0 & 30 & 0 & 17 & 0 & 30 & 17 & 0 & 0 & 30\\
+\hline
+
+\rowcolor{lightlightgray} A3 Injection & P & N & NN & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+OS Command Injection & 252 & 411 & 0 & 98 & 154 & 0 & 411 & 142 & 110 & 0 & 411 & 252 & 0 & 0 & 411\\
+\hline
+SQL Injection & 260 & 863 & 223 & 125 & 135 & 0 & 1086 & 242 & 18 & 356 & 730 & 260 & 0 & 217 & 869\\
+\hline
+LDAP Injection & 265 & 433 & 0 & 265 & 0 & 432 & 1 & 151 & 114 & 0 & 433 & 264 & 1 & 0 & 433\\
+\hline
+Cross-Site Scripting & 196 & 323 & 44 & 86 & 110 & 0 & 367 & 194 & 2 & 0 & 367 & 0 & 196 & 44 & 323\\
+\hline
+XPath Injection & 263 & 850 & 0 & 105 & 158 & 175 & 675 & 164 & 99 & 310 & 540 & 0 & 263 & 0 & 850\\
+\hline
+HTTP Response Splitting & 389 & 1266 & 115 & 0 & 389 & 0 & 1381 & 168 & 221 & 32 & 1349 & 0 & 389 & 0 & 1381\\
+\hline
+
+\rowcolor{lightlightgray} A4 Insecure Design & P & N & NN & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+Improper Error Handling & 90 & 155 & 2063 & 0 & 90 & 0 & 2218 & 20 & 70 & 33 & 2185 & 0 & 90 & 0 & 2218\\
+\hline
+Trust Boundary Violation & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+Method Tampering & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A5 Security Misconfiguration & P & N & NN & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+XML External Entities & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+Bad Programming of Cookies & 17 & 30 & 638 & 0 & 17 & 0 & 668 & 0 & 17 & 0 & 668 & 0 & 17 & 0 & 668\\
+\hline
+Insecure Use of Hard Coded Constants & 37 & 52 & 2 & 35 & 2 & 0 & 54 & 26 & 11 & 0 & 54 & 0 & 37 & 0 & 54\\
+\hline
+
+\rowcolor{lightlightgray} A6 Vulnerable and Outdated Components & P & N & NN & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+Vulnerable Third-Party Components & 68 & 120 & 364 & 0 & 68 & 0 & 484 & 0 & 68 & 0 & 484 & 0 & 68 & 0 & 484\\
+\hline
+
+\rowcolor{lightlightgray} A7 Identification and Authentication Failures & P & N & NN & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+Bypassing Authentication & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+Hard Coded Passwords & 111 & 156 & 75 & 102 & 9 & 3 & 228 & 70 & 41 & 104 & 127 & 0 & 111 & 75 & 156\\
+\hline
+
+\rowcolor{lightlightgray} A8 Software and data integrity failures & P & N & NN & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+Insecure Deserialization & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A9 Security Logging and Monitoring Failures & P & N & NN & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+Improper Output Neutralization for Logs & 51 & 90 & 53 & 0 & 51 & 0 & 143 & 34 & 17 & 4 & 139 & 0 & 51 & 49 & 94\\
+\hline
+
+\rowcolor{lightlightgray} A10 Server-side Request Forgery & P & N & NN & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+Server-side Request Forgery & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\caption{SAST tools output in relation to the Juliet Test Suit - Part2}
+\label{table:SAST tools output in relation to the Juliet Test Suit - Part2}
+\end{longtable}
+\end{tiny}
+
+
+\newpage
+
+

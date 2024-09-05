@@ -1,0 +1,260 @@
+BYPASS AUTHORIZATION:
+	Snyk: TP: 152 |FN: 97 |FP: 3 |TN: 1941|
+	Fortify: TP: 32 |FN: 217 |FP: 480 |TN: 1464|
+	Semgrep: TP: 10 |FN: 239 |FP: 10 |TN: 1934|
+	Synopsis: TP: 87 |FN: 162 |FP: 0 |TN: 1944|
+	Horusec: TP: 0 |FN: 249 |FP: 5 |TN: 1939|
+	Kiuwan: TP: 106 |FN: 143 |FP: 116 |TN: 1828|
+	SpotBugs: TP: 196 |FN: 53 |FP: 1101 |TN: 843|
+
+
+INSUFFICIENT SESSION EXPIRATION:
+	Snyk: TP: 0 |FN: 17 |FP: 0 |TN: 30|
+	Fortify: TP: 0 |FN: 17 |FP: 0 |TN: 30|
+	Semgrep: TP: 0 |FN: 17 |FP: 0 |TN: 30|
+	Synopsis: TP: 17 |FN: 0 |FP: 0 |TN: 30|
+	Horusec: TP: 0 |FN: 17 |FP: 0 |TN: 30|
+	Kiuwan: TP: 0 |FN: 17 |FP: 0 |TN: 30|
+	SpotBugs: TP: 0 |FN: 17 |FP: 0 |TN: 30|
+
+
+PATH TRANSVERSAL:
+	Snyk: TP: 308 |FN: 93 |FP: 112 |TN: 1625|
+	Fortify: TP: 355 |FN: 46 |FP: 734 |TN: 1003|
+	Semgrep: TP: 193 |FN: 208 |FP: 325 |TN: 1412|
+	Synopsis: TP: 13 |FN: 388 |FP: 9 |TN: 1728|
+	Horusec: TP: 0 |FN: 401 |FP: 4 |TN: 1733|
+	Kiuwan: TP: 275 |FN: 126 |FP: 124 |TN: 1613|
+	SpotBugs: TP: 353 |FN: 48 |FP: 707 |TN: 1065|
+
+
+CSRF:
+	Snyk: TP: 9 |FN: 269 |FP: 0 |TN: 84|
+	Fortify: TP: 10 |FN: 268 |FP: 2 |TN: 82|
+	Semgrep: TP: 8 |FN: 270 |FP: 5 |TN: 79|
+	Synopsis: TP: 4 |FN: 274 |FP: 0 |TN: 84|
+	Horusec: TP: 0 |FN: 278 |FP: 0 |TN: 84|
+	Kiuwan: TP: 202 |FN: 76 |FP: 2 |TN: 82|
+	SpotBugs: TP: 5 |FN: 273 |FP: 5 |TN: 79|
+
+
+INSECURE ALGORITHM:
+	Snyk: TP: 165 |FN: 63 |FP: 298 |TN: 377|
+	Fortify: TP: 152 |FN: 76 |FP: 1 |TN: 674|
+	Semgrep: TP: 165 |FN: 63 |FP: 0 |TN: 675|
+	Synopsis: TP: 135 |FN: 93 |FP: 389 |TN: 286|
+	Horusec: TP: 173 |FN: 55 |FP: 230 |TN: 445|
+	Kiuwan: TP: 150 |FN: 78 |FP: 40 |TN: 635|
+	SpotBugs: TP: 165 |FN: 63 |FP: 298 |TN: 377|
+
+
+WEAK HASH:
+	Snyk: TP: 185 |FN: 191 |FP: 7 |TN: 246|
+	Fortify: TP: 182 |FN: 194 |FP: 2 |TN: 251|
+	Semgrep: TP: 127 |FN: 249 |FP: 0 |TN: 253|
+	Synopsis: TP: 175 |FN: 201 |FP: 4 |TN: 249|
+	Horusec: TP: 216 |FN: 160 |FP: 29 |TN: 224|
+	Kiuwan: TP: 180 |FN: 196 |FP: 3 |TN: 250|
+	SpotBugs: TP: 141 |FN: 235 |FP: 0 |TN: 253|
+
+
+SEED HARDCODED:
+	Snyk: TP: 0 |FN: 17 |FP: 0 |TN: 30|
+	Fortify: TP: 0 |FN: 17 |FP: 0 |TN: 30|
+	Semgrep: TP: 0 |FN: 17 |FP: 0 |TN: 30|
+	Synopsis: TP: 17 |FN: 0 |FP: 0 |TN: 30|
+	Horusec: TP: 17 |FN: 0 |FP: 0 |TN: 30|
+	Kiuwan: TP: 0 |FN: 17 |FP: 0 |TN: 30|
+	SpotBugs: TP: 0 |FN: 17 |FP: 0 |TN: 30|
+
+
+WEAK RANDOM:
+	Snyk: TP: 224 |FN: 83 |FP: 0 |TN: 359|
+	Fortify: TP: 296 |FN: 11 |FP: 52 |TN: 307|
+	Semgrep: TP: 227 |FN: 80 |FP: 0 |TN: 359|
+	Synopsis: TP: 237 |FN: 70 |FP: 0 |TN: 359|
+	Horusec: TP: 226 |FN: 81 |FP: 55 |TN: 304|
+	Kiuwan: TP: 11 |FN: 296 |FP: 17 |TN: 342|
+	SpotBugs: TP: 263 |FN: 44 |FP: 0 |TN: 359|
+
+
+OS COMMAND INJECTION:
+	Snyk: TP: 295 |FN: 92 |FP: 45 |TN: 524|
+	Fortify: TP: 384 |FN: 3 |FP: 555 |TN: 14|
+	Semgrep: TP: 186 |FN: 201 |FP: 134 |TN: 435|
+	Synopsis: TP: 213 |FN: 174 |FP: 67 |TN: 502|
+	Horusec: TP: 252 |FN: 135 |FP: 5 |TN: 564|
+	Kiuwan: TP: 273 |FN: 114 |FP: 125 |TN: 444|
+	SpotBugs: TP: 378 |FN: 9 |FP: 522 |TN: 47|
+
+
+SQL INJECTION:
+	Snyk: TP: 439 |FN: 176 |FP: 126 |TN: 1987|
+	Fortify: TP: 462 |FN: 153 |FP: 318 |TN: 1795|
+	Semgrep: TP: 501 |FN: 114 |FP: 580 |TN: 1533|
+	Synopsis: TP: 410 |FN: 205 |FP: 129 |TN: 1984|
+	Horusec: TP: 462 |FN: 153 |FP: 1014 |TN: 1099|
+	Kiuwan: TP: 517 |FN: 98 |FP: 475 |TN: 1638|
+	SpotBugs: TP: 547 |FN: 68 |FP: 1084 |TN: 1031|
+
+
+LDAP INJECTION:
+	Snyk: TP: 203 |FN: 90 |FP: 13 |TN: 452|
+	Fortify: TP: 292 |FN: 1 |FP: 92 |TN: 373|
+	Semgrep: TP: 291 |FN: 2 |FP: 451 |TN: 14|
+	Synopsis: TP: 292 |FN: 1 |FP: 447 |TN: 18|
+	Horusec: TP: 266 |FN: 27 |FP: 7 |TN: 458|
+	Kiuwan: TP: 176 |FN: 117 |FP: 8 |TN: 457|
+	SpotBugs: TP: 292 |FN: 1 |FP: 460 |TN: 5|
+
+
+XSS:
+	Snyk: TP: 429 |FN: 184 |FP: 171 |TN: 2175|
+	Fortify: TP: 356 |FN: 257 |FP: 234 |TN: 2112|
+	Semgrep: TP: 146 |FN: 467 |FP: 73 |TN: 2273|
+	Synopsis: TP: 347 |FN: 266 |FP: 577 |TN: 1769|
+	Horusec: TP: 15 |FN: 598 |FP: 48 |TN: 2298|
+	Kiuwan: TP: 496 |FN: 117 |FP: 989 |TN: 1357|
+	SpotBugs: TP: 262 |FN: 351 |FP: 696 |TN: 1650|
+
+
+XPATH:
+	Snyk: TP: 16 |FN: 264 |FP: 7 |TN: 866|
+	Fortify: TP: 277 |FN: 3 |FP: 36 |TN: 837|
+	Semgrep: TP: 68 |FN: 212 |FP: 301 |TN: 572|
+	Synopsis: TP: 120 |FN: 160 |FP: 190 |TN: 683|
+	Horusec: TP: 15 |FN: 265 |FP: 20 |TN: 853|
+	Kiuwan: TP: 179 |FN: 101 |FP: 315 |TN: 558|
+	SpotBugs: TP: 278 |FN: 2 |FP: 869 |TN: 4|
+
+
+HTTP SPLITTING:
+	Snyk: TP: 253 |FN: 142 |FP: 6 |TN: 1432|
+	Fortify: TP: 139 |FN: 256 |FP: 316 |TN: 1122|
+	Semgrep: TP: 0 |FN: 395 |FP: 0 |TN: 1438|
+	Synopsis: TP: 0 |FN: 395 |FP: 0 |TN: 1438|
+	Horusec: TP: 0 |FN: 395 |FP: 0 |TN: 1438|
+	Kiuwan: TP: 171 |FN: 224 |FP: 59 |TN: 1379|
+	SpotBugs: TP: 371 |FN: 24 |FP: 874 |TN: 577|
+
+
+IMPROPER ERROR HANDLING:
+	Snyk: TP: 0 |FN: 700 |FP: 0 |TN: 2632|
+	Fortify: TP: 401 |FN: 299 |FP: 2194 |TN: 438|
+	Semgrep: TP: 4 |FN: 696 |FP: 0 |TN: 2632|
+	Synopsis: TP: 0 |FN: 700 |FP: 0 |TN: 2632|
+	Horusec: TP: 61 |FN: 639 |FP: 0 |TN: 2632|
+	Kiuwan: TP: 21 |FN: 679 |FP: 33 |TN: 2599|
+	SpotBugs: TP: 0 |FN: 700 |FP: 0 |TN: 2632|
+
+
+TRUST BOUNDARY:
+	Snyk: TP: 76 |FN: 7 |FP: 24 |TN: 530|
+	Fortify: TP: 31 |FN: 52 |FP: 12 |TN: 542|
+	Semgrep: TP: 69 |FN: 14 |FP: 26 |TN: 528|
+	Synopsis: TP: 83 |FN: 0 |FP: 30 |TN: 524|
+	Horusec: TP: 0 |FN: 83 |FP: 0 |TN: 554|
+	Kiuwan: TP: 72 |FN: 11 |FP: 522 |TN: 32|
+	SpotBugs: TP: 83 |FN: 0 |FP: 40 |TN: 514|
+
+
+METHOD TAMPERING:
+	Snyk: TP: 0 |FN: 149 |FP: 0 |TN: 48|
+	Fortify: TP: 0 |FN: 149 |FP: 0 |TN: 48|
+	Semgrep: TP: 1 |FN: 148 |FP: 0 |TN: 48|
+	Synopsis: TP: 0 |FN: 149 |FP: 0 |TN: 48|
+	Horusec: TP: 0 |FN: 149 |FP: 0 |TN: 48|
+	Kiuwan: TP: 137 |FN: 12 |FP: 0 |TN: 48|
+	SpotBugs: TP: 0 |FN: 149 |FP: 0 |TN: 48|
+
+
+XXE:
+	Snyk: TP: 5 |FN: 5 |FP: 3 |TN: 22|
+	Fortify: TP: 0 |FN: 10 |FP: 16 |TN: 9|
+	Semgrep: TP: 2 |FN: 8 |FP: 12 |TN: 13|
+	Synopsis: TP: 1 |FN: 9 |FP: 1 |TN: 24|
+	Horusec: TP: 0 |FN: 10 |FP: 5 |TN: 20|
+	Kiuwan: TP: 1 |FN: 9 |FP: 9 |TN: 16|
+	SpotBugs: TP: 1 |FN: 9 |FP: 0 |TN: 25|
+
+
+BAD PROGRAMMING COOKIES:
+	Snyk: TP: 230 |FN: 1435 |FP: 87 |TN: 2132|
+	Fortify: TP: 125 |FN: 1540 |FP: 232 |TN: 1987|
+	Semgrep: TP: 894 |FN: 762 |FP: 167 |TN: 2052|
+	Synopsis: TP: 716 |FN: 940 |FP: 82 |TN: 2137|
+	Horusec: TP: 1 |FN: 1664 |FP: 36 |TN: 2183|
+	Kiuwan: TP: 0 |FN: 1665 |FP: 0 |TN: 2219|
+	SpotBugs: TP: 186 |FN: 1479 |FP: 82 |TN: 2137|
+
+
+HARDCODED CONSTANTS:
+	Snyk: TP: 45 |FN: 17 |FP: 1 |TN: 65|
+	Fortify: TP: 4 |FN: 58 |FP: 0 |TN: 66|
+	Semgrep: TP: 4 |FN: 58 |FP: 2 |TN: 64|
+	Synopsis: TP: 40 |FN: 22 |FP: 7 |TN: 59|
+	Horusec: TP: 5 |FN: 57 |FP: 1 |TN: 65|
+	Kiuwan: TP: 31 |FN: 31 |FP: 0 |TN: 66|
+	SpotBugs: TP: 18 |FN: 44 |FP: 0 |TN: 66|
+
+
+OUTDATED COMPONENTS:
+	Snyk: TP: 1 |FN: 287 |FP: 0 |TN: 491|
+	Fortify: TP: 37 |FN: 251 |FP: 364 |TN: 127|
+	Semgrep: TP: 5 |FN: 283 |FP: 0 |TN: 491|
+	Synopsis: TP: 1 |FN: 287 |FP: 0 |TN: 491|
+	Horusec: TP: 10 |FN: 278 |FP: 2 |TN: 489|
+	Kiuwan: TP: 195 |FN: 93 |FP: 0 |TN: 491|
+	SpotBugs: TP: 0 |FN: 288 |FP: 0 |TN: 491|
+
+
+BYPASS AUTHENTICATION:
+	Snyk: TP: 0 |FN: 3 |FP: 0 |TN: 0|
+	Fortify: TP: 0 |FN: 3 |FP: 0 |TN: 0|
+	Semgrep: TP: 0 |FN: 3 |FP: 0 |TN: 0|
+	Synopsis: TP: 0 |FN: 3 |FP: 0 |TN: 0|
+	Horusec: TP: 0 |FN: 3 |FP: 0 |TN: 0|
+	Kiuwan: TP: 0 |FN: 3 |FP: 0 |TN: 0|
+	SpotBugs: TP: 0 |FN: 3 |FP: 0 |TN: 0|
+
+
+HARDCODED CREDENTIALS:
+	Snyk: TP: 102 |FN: 42 |FP: 111 |TN: 318|
+	Fortify: TP: 28 |FN: 116 |FP: 109 |TN: 320|
+	Semgrep: TP: 36 |FN: 108 |FP: 51 |TN: 378|
+	Synopsis: TP: 102 |FN: 42 |FP: 10 |TN: 419|
+	Horusec: TP: 4 |FN: 140 |FP: 169 |TN: 260|
+	Kiuwan: TP: 80 |FN: 64 |FP: 136 |TN: 293|
+	SpotBugs: TP: 58 |FN: 86 |FP: 1 |TN: 429|
+
+
+INSECURE DESERIALIZATION:
+	Snyk: TP: 2 |FN: 5 |FP: 0 |TN: 32|
+	Fortify: TP: 0 |FN: 7 |FP: 0 |TN: 32|
+	Semgrep: TP: 3 |FN: 4 |FP: 26 |TN: 6|
+	Synopsis: TP: 3 |FN: 4 |FP: 4 |TN: 28|
+	Horusec: TP: 0 |FN: 7 |FP: 0 |TN: 32|
+	Kiuwan: TP: 1 |FN: 6 |FP: 2 |TN: 30|
+	SpotBugs: TP: 2 |FN: 5 |FP: 0 |TN: 32|
+
+
+OUTPUT NEUTRALIZATION OF LOGS:
+	Snyk: TP: 130 |FN: 607 |FP: 12 |TN: 861|
+	Fortify: TP: 345 |FN: 392 |FP: 305 |TN: 568|
+	Semgrep: TP: 180 |FN: 557 |FP: 1 |TN: 872|
+	Synopsis: TP: 18 |FN: 719 |FP: 123 |TN: 750|
+	Horusec: TP: 0 |FN: 737 |FP: 49 |TN: 824|
+	Kiuwan: TP: 133 |FN: 604 |FP: 7 |TN: 866|
+	SpotBugs: TP: 14 |FN: 723 |FP: 3 |TN: 870|
+
+
+SSRF:
+	Snyk: TP: 5 |FN: 12 |FP: 7 |TN: 31|
+	Fortify: TP: 0 |FN: 17 |FP: 0 |TN: 38|
+	Semgrep: TP: 6 |FN: 11 |FP: 15 |TN: 23|
+	Synopsis: TP: 1 |FN: 16 |FP: 0 |TN: 38|
+	Horusec: TP: 0 |FN: 17 |FP: 0 |TN: 38|
+	Kiuwan: TP: 2 |FN: 15 |FP: 5 |TN: 33|
+	SpotBugs: TP: 1 |FN: 16 |FP: 3 |TN: 35|
+
+

@@ -1,0 +1,108 @@
+OS COMMAND INJECTION
+Snyk  126  0  45  80
+Fortify  126  0  125  0
+Semgrep  117  9  109  16
+Synopsis  115  11  67  58
+Horusec  0  126  0  125
+Kiuwan  126  0  125  0
+SpotBugs  126  0  111  14
+
+
+INSECURE ALGORITHM
+Snyk  130  0  0  116
+Fortify  130  0  0  116
+Semgrep  130  0  0  116
+Synopsis  97  33  0  116
+Horusec  97  33  66  50
+Kiuwan  130  0  40  76
+SpotBugs  130  0  0  116
+
+
+WEAK HASH
+Snyk  89  40  0  107
+Fortify  89  40  0  107
+Semgrep  89  40  0  107
+Synopsis  89  40  0  107
+Horusec  28  101  0  107
+Kiuwan  89  40  0  107
+SpotBugs  89  40  0  107
+
+
+LDAP INJECTION
+Snyk  27  0  13  19
+Fortify  27  0  31  1
+Semgrep  26  1  28  4
+Synopsis  27  0  15  17
+Horusec  2  25  7  25
+Kiuwan  24  3  8  24
+SpotBugs  27  0  27  5
+
+
+PATH TRANSVERSAL
+Snyk  133  0  66  948
+Fortify  122  11  667  347
+Semgrep  123  10  118  896
+Synopsis  0  133  0  1014
+Horusec  0  133  0  1014
+Kiuwan  118  15  110  904
+SpotBugs  133  0  484  530
+
+
+SQL INJECTION
+Snyk  272  0  87  381
+Fortify  185  87  154  314
+Semgrep  253  19  170  298
+Synopsis  272  0  128  340
+Horusec  199  73  414  54
+Kiuwan  263  9  119  349
+SpotBugs  272  0  210  258
+
+
+TRUST BOUNDARY
+Snyk  76  7  24  512
+Fortify  31  52  12  524
+Semgrep  69  14  26  510
+Synopsis  83  0  30  506
+Horusec  0  83  0  536
+Kiuwan  72  11  509  27
+SpotBugs  83  0  35  501
+
+
+WEAK RANDOM
+Snyk  218  0  0  275
+Fortify  218  0  52  223
+Semgrep  218  0  0  275
+Synopsis  218  0  0  275
+Horusec  193  25  52  223
+Kiuwan  0  218  0  275
+SpotBugs  218  0  0  275
+
+
+XPATH
+Snyk  15  0  7  13
+Fortify  14  1  15  5
+Semgrep  14  1  13  7
+Synopsis  15  0  15  5
+Horusec  15  0  20  0
+Kiuwan  15  0  5  15
+SpotBugs  15  0  19  1
+
+
+XSS
+Snyk  231  15  110  1122
+Fortify  215  31  68  1164
+Semgrep  46  200  26  1206
+Synopsis  246  0  561  671
+Horusec  15  231  4  1228
+Kiuwan  246  0  844  388
+SpotBugs  246  0  696  536
+
+
+BAD PROGRAMMING COOKIES
+Snyk  170  1366  82  1434
+Fortify  62  1474  190  1326
+Semgrep  847  680  163  1353
+Synopsis  677  850  81  1435
+Horusec  0  1536  36  1480
+Kiuwan  0  1536  0  1516
+SpotBugs  170  1366  82  1434
