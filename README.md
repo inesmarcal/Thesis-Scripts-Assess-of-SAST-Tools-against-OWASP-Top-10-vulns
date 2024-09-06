@@ -64,7 +64,7 @@ There will be 3 execution flows for these scripts. Two of them correspond to the
      - VULNING_BENCHMARK.txt - a file to be used on the regular_apps\combinations.py script to generate the weights for each tool regarding each vulnerability and scenario
      
 2. juliet_test_suite folder <br>
-   Gather the expect instances (since there isn't an expect list of existent issues as for OWASP Benchmark):
+   Gather the expected instances (since there is no stated list of existing issues like in the OWASP benchmark):
    * First unzip Juliet.zip on the [your-disk]:[name-path]\juliet_test_suite\expect_test_cases_list path
    * Compile the project:
      ```shellscript
@@ -75,23 +75,23 @@ There will be 3 execution flows for these scripts. Two of them correspond to the
      [your-disk]:[name-path]\juliet_test_suite\expect_test_cases_list> python expect_results_juliettestsuite.py
      ```
 
-     This will generate a file called expected.txt which will correspond to the existent vulnerable and non-vulnerable instances of the Juliet Test Suite testcase, that will be used later to classify the results obtained by the tools.
+     This will generate a file called expected.txt corresponding to the existing vulnerable and non-vulnerable instances of the Juliet Test Suite test case, which will later be used to classify the results obtained by the tools.
 
-   The main script will be executed nextly:
-   * The next step is to run the main code of this flow of execution. The first time this script is run you should comment it from line 1226 to 1323, as this part regards with combinations of 2 tools using weights and at this point the file WEIGHTS.txt doesn't exist (will be generated later in the main script from regular_apps folder). Later you will be able to uncomment these lines when certain files will be generated.
+   The main script is executed next:
+   * The next step is to run the main code of this execution sequence. The first time this script is run, it should be commented from line 1226 to 1323 since this part deals with combinations of 2 tools using weights and at this point the file WEIGHTS.txt doesn't exist (it will be generated later by the main script from the regular_apps folder). Later on, it will be possible to uncomment these lines when certain files are generated.
      ```shellscript
      [your-disk]:[name-path]\owasp_benchmark> python verify_results_benchmarkowasp.py
      ```
 
-     This will generate an output of all the results achieved by the tools in the Juliet Test Suite about all the types of analysis executed. It will also generate the following files:
-     - kiuwan\KIUWAN_FILE.txt - a file from a separate analysis to the tool Kiuwan
+     This will generate an output of all the results obtained by the tools in the Juliet Test Suite for all the types of analysis performed. It will also create the following files:
+     - kiuwan\KIUWAN_FILE.txt - a file from a separate analysis to the Kiuwan tool
      - latex\LATEX_JULIET.txt - the latex code for the results obtained by the tools in this platform (TPs, FNs, FPs and TNs)
      - weight_combinations_2_results\FINAL_VULNING_2.txt - a file to be opened as an Excel and that will be used to calculate the metrics for the combinations of 2 tools using weights per vulnerability
      - VULNING_JULIET.txt - a file to be used on the regular_apps\combinations.py script to generate the weights for each tool regarding each vulnerability and scenario
      
 3. regular_apps <br>
    Here we start by running the main script:
-   * Here is where most of the tasks will be done, namely classification of the tools in the majority of the applications (by outputing it), calculus of the weights, generation of a big part of the latex tables.
+   * This is where most of the work is done, which includes classifying the tools' outputs against the majority of applications, calculating the weights, and generating a great part of the latex tables.
      ```shellscript
      [your-disk]:[name-path]\regular_apps> python combinations.py
      ```
