@@ -40,7 +40,7 @@ Some Excel files are also provided and are used as templates for several purpose
 
 
 ## To run this project:
-There will be 3 execution flows for these scripts. Two of them correspond to the 2 test case sets Juliet Test Suite and OWASP Benchmark. The other is the main execution flow, which collects and analyzes all the results produced by the tools, in particular those of the combinations of 2 and 3 tools without weights and combinations of 2 tools with weights, and then generates Latex tables. So the scripts are executed as follows:
+There will be 3 execution flows for these scripts. Two of them correspond to the 2 test case sets Juliet Test Suite and OWASP Benchmark. The other is the main execution flow, which collects and analyzes all the results produced by the tools, particularly those of the combinations of 2 and 3 tools without weights and combinations of 2 tools with weights, and then generates Latex tables. So the scripts are executed as follows:
 1. owasp_benchmark folder <br>
    Gather the expect cookies vulnerable and non-vulnerable instances:
    * First unzip BenchmarkJava.zip on the [your-disk]:[name-path]\owasp_benchmark\expect_test_cases_list path
@@ -52,7 +52,7 @@ There will be 3 execution flows for these scripts. Two of them correspond to the
      This will generate 2 files, result_vuln_cookie.txt and result_nonvuln_cookie.txt, corresponding to the existing vulnerable and non-vulnerable instances of the OWASP benchmark test case, respectively, which will be used later to classify the results obtained by the tools regarding the "Bad Programming of Cookies" vulnerability.
 
    The main script is executed next:
-   * The next step is to run the main code of this flow of execution. The first time this script is run, it should be commented from line 1266 to 1330 because this part deals with combinations of 2 tools using weights, and at this point the file WEIGHTS.txt doesn't exist (it will be generated later in the main script from the regular_apps folder). Later on, these lines will be uncommented when certain files are generated.
+   * The next step is to run the main code of this execution flow. The first time this script is run, it should be commented from line 1266 to 1330 because this part deals with combinations of 2 tools using weights, and at this point the file WEIGHTS.txt doesn't exist (it will be generated later in the main script from the regular_apps folder). Later on, these lines will be uncommented when certain files are generated.
      ```shellscript
      [your-disk]:[name-path]\owasp_benchmark> python verify_results_juliettestsuite.py
      ```
@@ -96,14 +96,14 @@ There will be 3 execution flows for these scripts. Two of them correspond to the
      [your-disk]:[name-path]\regular_apps> python combinations.py
      ```
 
-     This will generate an output of all the results achieved by the tools in the applications that aren't benchmark platforms about all the type of analysis executed. Will also generate the following files:
+     It generates a list of all the results achieved by the tools executed against the web applications for each type of analysis performed. The following files are also created:
      - kiuwan\KIUWAN_FILE.txt and kiuwan\KIUWAN_FILE_FP.txt - files from a separate analysis to the tool Kiuwan
      - latex_of_other_applications\LATEX.txt - the latex code for the results obtained by the tools in these applications (TPs, FNs, FPs and TNs)
-     - results_weights_2\FINAL_VULNING_2.txt - a file to be open as an excel and that will be used to calculate the metrics for the combinations of 2 tools using weights per vulnerability
+     - results_weights_2\FINAL_VULNING_2.txt - a file to be opened as an Excel and that will be used to calculate the metrics for the combinations of 2 tools using weights per vulnerability
      - initial_vulning\VULNING.txt - a file to be used to generate the weights for each tool regarding each vulnerability and scenario
-     - weights_table\WEIGHTS.txt - the file that contains all the weights of all tools regarding the scenario and vulnerability analysed.
+     - weights_table\WEIGHTS.txt - a file that contains all the weights of all tools regarding each scenario and vulnerability analyzed.
 
-   For the generationg of the rest of latex tables:
+   For the generation of the rest of the latex tables:
    * To generate latex tables for individual tools, combinations of 2 and 3 tools without weights:
      ```shellscript
      [your-disk]:[name-path]\regular_apps> python top_comb_2_comb_3\top_comb.py
@@ -119,11 +119,10 @@ There will be 3 execution flows for these scripts. Two of them correspond to the
 
 ## Notes important to read
 - For more information about the thesis linked to these scripts read it on [ADD LINK WHEN AVAILABLE]
-- The folder #template will contain a template of how the folders should be organized, for that unzip the zip in it called template.zip
-- The folder resources contains the exact folders used through this analysis (which have the same structure as the template provided)
-- The file WEIGHTS.txt created by regular_apps\combinations.py script should be copied, after generated, to the folders owasp_benchmark\weight_combinations_2_results and juliet_test_suite\weight_combinations_2_results. With this you should uncomment the lines previously commented to make the analysis of combinations of 2 tools using weights for the OWASP Benchmark and Juliet Test Suite.
-- The examples of the template files for OWASP Benchmark and Juliet Test Suite are someway "hardcoded" to the tools used, so if you need to use other tools you can follow the same logic as demonstrated, but adapt this code for the platforms you would use. If you only use regular web applications like Webgoat or Juice Shop you can just use the excel provided, the code easy adaptable. Even tho, one the future steps will be the generalization of this code.
-
+- The #template folder contains a template of how the folders should be organized, so unzip the template.zip there.
+- The folder resources contain the exact folders used by this analysis (which have the same structure as the provided template).
+- The WEIGHTS.txt file created by the regular_apps\combinations.py script should be copied to the owasp_benchmark\weight_combinations_2_results and juliet_test_suite\weight_combinations_2_results folders after generation. With this, it should be uncommented the previously commented lines to perform the combinations of 2 tools analysis using weights for both the OWASP benchmark and the Juliet test suite.
+- The sample template files for the OWASP Benchmark and Juliet Test Suite are somewhat "hardcoded" to the tools used, so in the case of using other tools, it is possible to follow the same logic as demonstrated, but adapt this code for the platforms that would be used. If it is only used regular web applications like Webgoat or Juice Shop, just use the Excel provided, the code is easily adaptable. One future step will be the generalization of this code.
 
 
 ## Authors:
